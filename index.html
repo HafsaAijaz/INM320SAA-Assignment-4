@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>INM320 Assignment 5: Web Accessibility</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+    <link rel="stylesheet"
+        href="//fonts.googleapis.com/css?family=Quando:100,200,300,400,500,600,700,800,900%7CJosefin+Sans:100,200,300,400,500,600,700,800,900"
+        type="text/css" media="all" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <script src="https://kit.fontawesome.com/2216cb6a92.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li class="menu-item">
+                        <a href="#">Explore</a>
+                        <ul>
+                            <li><a href="#">Blog Posts</a></li>
+                            <li><a href="#">Travel Videos</a></li>
+                            <li><a href="#">Photography Gallery</a></li>
+                            <li><a href="#">Adventure Stories</a></li>
+                            <li><a href="#">Podcast Episodes</a></li>
+                        </ul>
+                    </li>
+                    <li class="active-menu"><a href="#">Guides</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="logo">
+                <a href="/" aria-label="Return to homepage">
+                    <img src="./assets/images/site-logo.png" alt="Dreamla Travel Logo" />
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <article>
+                <div class="image-section">
+                    <a href="#">
+                        <img width="960" height="750" src="./assets/images/top-places-you-should-visit-right-now.jpg"
+                            alt="Scenic ocean view from a balcony with two lounge chairs." />
+                    </a>
+                </div>
+
+                <div class="content-section">
+                    <header>
+                        <h2 class="post-title">
+                            <a href="#">Must-Visit Destinations for Your Next Trip</a>
+                        </h2>
+                    </header>
+
+                    <section>
+                        <p>Want travel tips and destination recommendations? Reach out to us!</p>
+                        <form action="/" method="post">
+                            <label for="userName">Full Name</label>
+                            <input id="userName" type="text" name="fullname" required />
+
+                            <label for="userEmail">Email Address</label>
+                            <input id="userEmail" type="email" name="email" required />
+
+                            <div class="consent-checkbox">
+                                <input type="checkbox" id="consentCheck" name="consent" required />
+                                <label for="consentCheck">I agree to be contacted</label>
+                            </div>
+
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </section>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-brand">
+                <a href="#" aria-label="Homepage">
+                    <img src="./assets/images/footer-logo.png" alt="Dreamla Footer Logo" />
+                </a>
+            </div>
+
+            <nav class="social-media">
+                <ul>
+                    <li><a href="#" target="_blank" aria-label="Visit our Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" target="_blank" aria-label="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank" aria-label="Check out our Instagram"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#" target="_blank" aria-label="Watch us on YouTube"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#" target="_blank" aria-label="Find us on Pinterest"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+            </nav>
+
+            <p>&copy; 2025 Dreamla - All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
